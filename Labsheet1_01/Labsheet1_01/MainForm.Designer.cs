@@ -28,11 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnShow = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnShow
+            // 
+            this.btnShow.Location = new System.Drawing.Point(12, 12);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(227, 58);
+            this.btnShow.TabIndex = 1;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "MainForm";
+            this.ClientSize = new System.Drawing.Size(251, 92);
+            this.Controls.Add(this.btnShow);
+            this.Name = "MainForm";
+            this.Text = "Labsheet01 : 6002526";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.Button btnShow;
     }
 }
